@@ -1,0 +1,9 @@
+Code to calculate rates of self-citation in journal papers. 
+
+Self-citation for first/last/any authors is defined as:
+
+1) the rate of cited references authored by the first author of the base paper
+
+2) the rate of cited references authored by the last author of the base paper
+
+3) the rate of cited references authored by any author of the base paper
