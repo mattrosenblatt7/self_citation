@@ -1,8 +1,14 @@
+##################################################
+#
+# Authors: Matt Rosenblatt & Stephanie Noble
 # Requirements:
 #   installed unidecode and pybliometrics (see https://pybliometrics.readthedocs.io/en/stable/)
 #   and requested API key (see above ref)
 #   must be connected to VPN associated with the Scopus account (e.g., Yale)
 #   https://github.com/pybliometrics-dev/pybliometrics/issues/191
+#
+#################################################
+
 #def main():
 from pybliometrics.scopus import AbstractRetrieval, AuthorRetrieval
 import pandas as pd
