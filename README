@@ -20,7 +20,7 @@
 * Click the appropriate result
 * On the next screen, record the ID of the author (below, boxed in red). You will later input this to the python script
 
-![search_results](imgs/scheinost_scopus.png)
+![search_results](./imgs/scheinost_scopus.png)
 * Generate API keys
 * Go to https://dev.elsevier.com/
 * Click "I want an API key"
