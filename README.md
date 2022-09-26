@@ -59,14 +59,14 @@ Other outputs include:
 * './results/' + scopus_indexed_name + '_single_author_hist.png'
   * This shows a histogram of self-citation rates across all papers for the author of interest
 
-![single_hist](/imgs/single_hist.png)
+![single_hist](/results/single_hist.png)
 
 * './results/' + scopus_indexed_name + '_any_author_hist.png'
   * This shows the Any Author self-citation rates for all the author of interest's papers
 
-![any_hist](/imgs/any_hist.png)  
+![any_hist](/results/any_hist.png)  
   
 * './results/' + scopus_indexed_name + '_single_author_time.png'
   * This plots the author of interest's self-citation rate by year
  
-![single_year](/imgs/single_time.png)
+![single_year](/results/single_time.png)
