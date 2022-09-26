@@ -129,13 +129,13 @@ if make_plots:
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.histplot(x='sc_rate', data=docs_df, color='#1b9e77', ax=ax)
     ax.set_xlabel('Author-Author self-citation rate')
-    ax.set_xlabel('Count')
+    ax.set_ylabel('Count')
     fig.savefig('./results/' + scopus_indexed_name + '_single_author_hist.png', format="png", transparent=True, dpi=400, bbox_inches='tight')
 
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.histplot(x='sc_rate_any', data=docs_df, color='#d95f02', ax=ax)
     ax.set_xlabel('Any Author self-citation rate')
-    ax.set_xlabel('Count')
+    ax.set_ylabel('Count')
     fig.savefig('./results/' + scopus_indexed_name + '_any_author_hist.png', format="png", transparent=True, dpi=400, bbox_inches='tight')
 
 
@@ -143,7 +143,7 @@ if make_plots:
     df_by_year = docs_df.groupby(['Year']).agg({'sc_count':'sum', 'numref':'sum'})
     df_by_year['sc_rate'] = df_by_year['sc_count'] / df_by_year['numref']
     ax.set_xlabel('Year')
-    ax.set_xlabel('Author-Author self-citation rate')
+    ax.set_ylabel('Author-Author self-citation rate')
     sns.scatterplot(data=df_by_year, x='Year', y='sc_rate', color='#1b9e77', ax=ax)
     fig.savefig('./results/' + scopus_indexed_name + '_single_author_time.png', format="png", transparent=True, dpi=400, bbox_inches='tight')
 
