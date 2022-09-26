@@ -20,7 +20,7 @@
 * Click the appropriate result
 * On the next screen, record the ID of the author (below, boxed in red). You will later input this to the python script
 
-![search_results](./imgs/scheinost_scopus.png)
+![search_results](/imgs/scheinost_scopus.png)
 * Generate API keys
 * Go to https://dev.elsevier.com/
 * Click "I want an API key"
@@ -43,7 +43,7 @@ python self_citation_author.py --ID 25628822400 --allow_initial 1 --make_plots 1
 
 # Outputs
 The above code will print the following to the terminal after succesfully running:
-![terminal](imgs/terminal_output.png)
+![terminal](/imgs/terminal_output.png)
 
 Other outputs include:
 * './results/results_df_' + scopus_indexed_name + '.csv'
@@ -57,12 +57,12 @@ Other outputs include:
     
 * './results/' + scopus_indexed_name + '_single_author_hist.png'
   * This shows a histogram of self-citation rates across all papers for the author of interest
-![single_hist](imgs/Scheinost, D._single_author_hist.png)
+![single_hist](/imgs/Scheinost, D._single_author_hist.png)
 
 * './results/' + scopus_indexed_name + '_any_author_hist.png'
   * This shows the Any Author self-citation rates for all the author of interest's papers
-![any_hist](imgs/Scheinost, D._single_author_hist.png)  
+![any_hist](/imgs/Scheinost, D._single_author_hist.png)  
   
 * './results/' + scopus_indexed_name + '_single_author_time.png'
   * This plots the author of interest's self-citation rate by year
-![single_year](imgs/Scheinost, D._single_author_time.png)
+![single_year](/imgs/Scheinost, D._single_author_time.png)
