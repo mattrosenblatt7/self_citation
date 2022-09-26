@@ -43,6 +43,7 @@ python self_citation_author.py --ID 25628822400 --allow_initial 1 --make_plots 1
 
 # Outputs
 The above code will print the following to the terminal after succesfully running:
+
 ![terminal](/imgs/terminal_output.png)
 
 Other outputs include:
@@ -57,12 +58,15 @@ Other outputs include:
     
 * './results/' + scopus_indexed_name + '_single_author_hist.png'
   * This shows a histogram of self-citation rates across all papers for the author of interest
+
 ![single_hist](/imgs/Scheinost, D._single_author_hist.png)
 
 * './results/' + scopus_indexed_name + '_any_author_hist.png'
   * This shows the Any Author self-citation rates for all the author of interest's papers
+
 ![any_hist](/imgs/Scheinost, D._single_author_hist.png)  
   
 * './results/' + scopus_indexed_name + '_single_author_time.png'
   * This plots the author of interest's self-citation rate by year
+ 
 ![single_year](/imgs/Scheinost, D._single_author_time.png)
