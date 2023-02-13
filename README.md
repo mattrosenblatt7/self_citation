@@ -12,8 +12,11 @@
     * this package is more easily installed with pip. 
     * If you are using conda, we suggest first doing "conda install pip" and then "pip install pybliometrics"
  
- 
-# Getting Scopus data
+# Self-citation code to evaluate your own self-citation rate
+
+Please email matthew.rosenblatt@yale.edu if you have trouble running this or do not have institutional access. We can help you run the code and/or run it for you and share your self-citation trends.
+
+## Getting Scopus data
 * Connect to your institution's VPN
 * Go to scopus.com
 * Search within authors (e.g., Scheinost, D)
@@ -28,7 +31,7 @@
 * You will enter these into python code
  
 
-# Running the python code
+## Running the python code
 * Important: you must be connected to your institution's VPN to run the code
 * cd to a directory containing the attached .py file
 * Run python script
@@ -41,7 +44,7 @@
 python self_citation_author.py --ID 25628822400 --allow_initial 1 --make_plots 1
 ```
 
-# Outputs
+## Outputs
 The above code will print the following to the terminal after succesfully running:
 
 ![terminal](/imgs/terminal_output.png)
@@ -70,3 +73,11 @@ Other outputs include:
   * This plots the author of interest's self-citation rate by year
  
 ![single_year](/results/single_time.png)
+
+# Analysis of raw data for figures presented in paper
+
+See raw_data_analysis folder and instructions inside.
+
+# Analysis of model data for table presented in paper
+
+See model_data_analysis folder and instructions inside. 
