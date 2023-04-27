@@ -1,4 +1,4 @@
-The following code and data are for non-commercial and academic purposes only. 
+The following code and data are for non-commercial and academic purposes only. Please see LICENSE for further details.
 
 # Set up a python 3 environment
 
@@ -84,6 +84,8 @@ See raw_data_analysis folder and instructions inside.
 
 See model_data_analysis folder and instructions inside. 
 
+
+# License
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
