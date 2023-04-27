@@ -1,14 +1,11 @@
-#################################################
-#
-# Authors: Matt Rosenblatt 
-#
-# Requirements:
-#   installed pybliometrics (see https://pybliometrics.readthedocs.io/en/stable/)
-#   and requested API key (see above ref)
-#   must be connected to VPN associated with the Scopus account (e.g., Yale)
-#   https://github.com/pybliometrics-dev/pybliometrics/issues/191
-#   see config file at
-#def main():
+'''
+Authors: Matt Rosenblatt 
+This code was used to create the citation pairs dataset. You can just use the dataset that has been uploaded to GitHub
+Requirements:
+installed pybliometrics (see https://pybliometrics.readthedocs.io/en/stable/) and requested API key 
+must be connected to VPN associated with the Scopus account (e.g., Yale)
+'''
+
 from pybliometrics.scopus import AbstractRetrieval, AuthorRetrieval, AffiliationRetrieval
 import pandas as pd
 from tqdm import tqdm
@@ -30,11 +27,6 @@ HTTPConnection.default_socket_options = (
     (socket.SOL_SOCKET, socket.SO_RCVBUF, 1000000)
 ])
 
-
-# (TEMPORARY) testing JSON error
-# ref_ref = AbstractRetrieval('2-s2.0-85061896593', refresh=True, view='FULL')
-# print(ref_ref)
-# print(stophere)
 
 # add arguments
 parser = argparse.ArgumentParser()
@@ -168,9 +160,6 @@ for dir_name in dir_list:
             document_type = [doc_types_for_year[entry_idx]]*numref
             
             # Note: not present
-            # doc_type_cited = [None]*numref
-            # doc_type_citing = [None]*numref
-            # print('Length of full abstract: {:d} and ref abstract: {:d}'.format(len(ab_full.references), len(ab_ref.references)))
             eid_full = [ab.id for ab in ab_full.references]
             eid_ref = [ab.id for ab in ab_ref.references]
             missing_ref_eid = [ eid for eid in eid_full if eid not in eid_ref]
