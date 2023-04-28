@@ -1,6 +1,26 @@
-The following code and data are for non-commercial and academic purposes only. Please see LICENSE for further details.
+This repository includes data and code for the preprint [*Trends in self-citation rates in Neuroscience literature*](https://www.biorxiv.org/content/10.1101/2022.09.27.509533v2)
 
-# Set up a python 3 environment
+The following code and data are for non-commercial and academic purposes only. Please see the LICENSE file for further details.
+
+# Google Colaboratory analysis scripts
+
+We recommend that you run the analysis (raw data analysis and model-based analysis from our preprint) using this Google Colab link. You can also view this in the colab_analyses.ipynb file. 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mattrosenblatt7/self_citation/blob/main/colab_analyses.ipynb)
+
+# Analysis of raw data for figures presented in paper
+
+We recommend you use the Google Colab session above, which includes scripts and automatically loads data. However, for further details, see the raw_data_analysis folder and instructions inside. The corresponding article-level data is in the file raw_data_analysis/data/sc_article_data.csv. The data codebook is in raw_data_analysis/raw_data_codebook.xlsx, but please note that some information in the codebook has been excluded to anonymize the authors and articles.
+
+# Analysis of model data for table presented in paper
+
+We recommend you use the Google Colab session above, which includes scripts and automatically loads data. However, for further details, see the model_data_analysis folder and instructions inside. The corresponding data of citation pairs is in the file model_data_analysis/data/citation_pairs.csv. The data codebook is in model_data_analysis/model_data_codebook.xlsx, but please note that some information in the codebook has been excluded to anonymize the authors and articles.
+
+# Self-citation code to evaluate your own self-citation rate
+
+Please email matthew.rosenblatt@yale.edu if you have trouble running this or do not have institutional access. We can help you run the code and/or run it for you and share your self-citation trends.
+
+## Set up a python 3 environment
 
 * Set up a python 3 environment. Note: this code was primarily tested with Python 3.8 but should work with other versions
 * Install the following packages:
@@ -13,10 +33,6 @@ The following code and data are for non-commercial and academic purposes only. P
   * pybliometrics
     * this package is more easily installed with pip. 
     * If you are using conda, we suggest first doing "conda install pip" and then "pip install pybliometrics"
- 
-# Self-citation code to evaluate your own self-citation rate
-
-Please email matthew.rosenblatt@yale.edu if you have trouble running this or do not have institutional access. We can help you run the code and/or run it for you and share your self-citation trends.
 
 ## Getting Scopus data
 * Connect to your institution's VPN
@@ -32,7 +48,6 @@ Please email matthew.rosenblatt@yale.edu if you have trouble running this or do 
 * Generate up to 10 keys
 * You will enter these into python code
  
-
 ## Running the python code
 * Important: you must be connected to your institution's VPN to run the code
 * cd to a directory containing the attached .py file
@@ -75,14 +90,6 @@ Other outputs include:
   * This plots the author of interest's self-citation rate by year
  
 ![single_year](/results/single_time.png)
-
-# Analysis of raw data for figures presented in paper
-
-See raw_data_analysis folder and instructions inside.
-
-# Analysis of model data for table presented in paper
-
-See model_data_analysis folder and instructions inside. 
 
 
 # License
