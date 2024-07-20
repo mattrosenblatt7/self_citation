@@ -6,16 +6,15 @@ The following code and data are for non-commercial and academic purposes only. P
 
 We recommend that you run the analysis (raw data analysis and model-based analysis from our preprint) using this Google Colab link. You can also view this in the colab_analyses.ipynb file. 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mattrosenblatt7/self_citation/blob/main/colab_analyses.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mattrosenblatt7/self_citation/blob/main/self_citation_colab_analyses.ipynb)
 
 # Analysis of raw data for figures presented in paper
 
-We recommend you use the Google Colab session above, which includes scripts and automatically loads data. However, for further details, see the raw_data_analysis folder and instructions inside. The corresponding article-level data is in the file raw_data_analysis/data/sc_article_data.csv. The data codebook is in raw_data_analysis/raw_data_codebook.xlsx, but please note that some information in the codebook has been excluded to anonymize the authors and articles.
+We recommend you use the Google Colab session above, which includes scripts and automatically loads data. However, for further details, see the raw_data_analysis folder and instructions inside. The corresponding article-level data is in the file raw_data_analysis/self_citation_data.xlsx. The data codebook is in raw_data_analysis/raw_data_codebook.xlsx, but please note that some information in the codebook has been excluded to anonymize the authors and articles.
 
 # Analysis of model data for table presented in paper
 
-We recommend you use the Google Colab session above, which includes scripts and automatically loads data. However, for further details, see the model_data_analysis folder and instructions inside. The corresponding data of citation pairs is in the file model_data_analysis/data/citation_pairs.csv. The data codebook is in model_data_analysis/model_data_codebook.xlsx, but please note that some information in the codebook has been excluded to anonymize the authors and articles.
-
+We recommend you use the Google Colab session above, which includes scripts and automatically loads data. However, for further details, see the model_data_analysis folder and instructions inside. The corresponding data used for models are in model_data_analysis/filtered_model_data_by_paper_fa.csv and model_data_analysis/filtered_model_data_by_paper_la.csv. 
 # Self-citation code to evaluate your own self-citation rate
 
 Please email matthew.rosenblatt@yale.edu if you have trouble running this or do not have institutional access. We can help you run the code and/or run it for you and share your self-citation trends.
